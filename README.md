@@ -28,7 +28,7 @@ Before running the pipeline, ensure the following:
 To verify your Python version:
 
 ```
-python --version
+python3 --version
 ```
 
 Expected output:
@@ -48,7 +48,7 @@ The pipeline has been designed to:
 From the project root:
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 Activate:
@@ -128,7 +128,6 @@ Behavior:
 ### Multiple input files:
 
 ```bash
-mkdir -p out_multi
 python run.py \
   --inputs examples/input1.txt examples/input2.txt \
   --config examples/config_upper.json \
